@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Current Queue</h2>
+    <ul>
+        {% for appointment in appointments %}
+            <li>{{ appointment.time }} - {{ appointment.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
